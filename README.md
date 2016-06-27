@@ -17,6 +17,6 @@ python -m SimpleHttpServer
 With npm and `http-server`:
 
 ```
-npm -g http-server
+npm install http-server -g
 http-server
 ```
