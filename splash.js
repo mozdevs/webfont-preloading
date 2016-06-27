@@ -18,7 +18,7 @@ var GameScene = {
     create: function () {
         this.game.add.image(0, 0, 'background');
 
-        let fancyStyle = { font: '30px "Amatica SC"', fill: '#fff'};
+        var fancyStyle = { font: '30px "Amatica SC"', fill: '#fff'};
         this.game.add.text(
             this.game.world.width / 2,
             this.game.world.height,
@@ -29,7 +29,7 @@ var GameScene = {
 };
 
 function startGame() {
-    let game = new Phaser.Game(625, 300, Phaser.AUTO, 'game');
+    var game = new Phaser.Game(625, 300, Phaser.AUTO, 'game');
     game.state.add('preloader', PreloaderScene);
     game.state.add('play', GameScene);
 

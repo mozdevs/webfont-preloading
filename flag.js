@@ -6,7 +6,7 @@ var wasGameLoaded = false;
 function createText(game) {
     if (!wasFontLoaded || !wasGameLoaded) return;
 
-    let fancyStyle = { font: '30px "Amatica SC"', fill: '#fff'};
+    var fancyStyle = { font: '30px "Amatica SC"', fill: '#fff'};
     game.add.text(
         game.world.width / 2,
         game.world.height,
@@ -17,7 +17,7 @@ function createText(game) {
 
 var PreloaderScene = {
     preload: function () {
-        let font = new FontFaceObserver('Amatica SC');
+        var font = new FontFaceObserver('Amatica SC');
         font.load().then(function () {
             wasFontLoaded = true;
             createText();
@@ -46,7 +46,7 @@ var GameScene = {
 };
 
 window.onload = function () {
-    let game = new Phaser.Game(625, 300, Phaser.AUTO, 'game');
+    var game = new Phaser.Game(625, 300, Phaser.AUTO, 'game');
     game.state.add('preloader', PreloaderScene);
     game.state.add('play', GameScene);
 
