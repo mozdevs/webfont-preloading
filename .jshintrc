@@ -1,5 +1,4 @@
 {
-    "esnext": true,
     "browser": true,
     "strict": true,
     "latedef": true,
@@ -9,6 +8,7 @@
     "white": true,
     "node": true,
     "predef": [
-        "Phaser"
+        "Phaser",
+        "FontFaceObserver"
     ]
 }
