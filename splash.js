@@ -3,7 +3,7 @@
 var PreloaderScene = {
     preload: function () {
         this.game.add.text(300, 150, 'Loading', {
-            font: '60px "Amatica SC"',
+            font: '60px monospace',
             fill: '#fff',
         }).anchor.setTo(0.5);
 
