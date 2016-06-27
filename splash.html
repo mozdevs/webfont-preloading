@@ -1,0 +1,56 @@
+<!doctype html>
+<head>
+    <title>Webfont preloading demos</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
+    <link rel="stylesheet" href="fonts.css" type="text/css">
+    <script src="lib/phaser.min.js"></script>
+    <script src="splash.js"></script>
+    <style>
+        .game-wrapper {
+            width: 625px;
+            height: 300px;
+            position: relative;
+        }
+        .overlay {
+            background: #000;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .overlay .play {
+            display: flex-item;
+        }
+        .play {
+            font-size: 80px;
+            background: none;
+            border: none;
+            color: #999;
+            font-family: 'Amatica SC';
+        }
+        .play:hover {
+            cursor: pointer;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Webfont preloading demos</a></h1>
+        <p>Splash screen workaround</p>
+    </header>
+    <main>
+        <article id="game" class="game-wrapper">
+            <div id="overlay" class="overlay">
+                <button id="start" class="play">Play</button>
+            </div>
+        </article><!-- game -->
+    </main>
+</body>

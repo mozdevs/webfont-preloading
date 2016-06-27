@@ -1,0 +1,14 @@
+{
+    "esnext": true,
+    "browser": true,
+    "strict": true,
+    "latedef": true,
+    "maxlen": 80,
+    "trailing": true,
+    "camelcase": true,
+    "white": true,
+    "node": true,
+    "predef": [
+        "Phaser"
+    ]
+}
